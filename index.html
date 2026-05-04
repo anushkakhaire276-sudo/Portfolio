@@ -1,313 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anushka Khaire Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-:root {
-    --primary: #2563eb;
-    --primary-light: #dbeafe;
-    --primary-verylight: #eff6ff;
-    --dark: #1e293b;
-    --text: #334155;
-}
-
-•⁠  ⁠{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Navbar */
-header {
-    background: var(--dark);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-}
-
-nav {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    color: white;
-    font-size: 22px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #e2e8f0;
-    text-decoration: none;
-}
-
-/* HOME (Light Professional) */
-.home {
-    height: 90vh;
-    background: linear-gradient(135deg, #f8fafc, #e0f2fe);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    color: #1e293b;
-}
-
-.home div {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.home h1 { font-size: 42px; }
-.home h3 { margin-top: 10px; }
-.home p { margin-top: 15px; max-width: 600px; }
-
-/* Sections */
-section {
-    padding: 70px 10%;
-    text-align: center;
-}
-
-h2 { margin-bottom: 25px; }
-
-/* Section colors */
-.about { background: #f1f5f9; }
-.education { background: #e0f2fe; }
-.skills { background: #fef9c3; }
-.certificates { background: #ede9fe; }
-.projects { background: #f1f5f9; }
-.contact { background: #e2e8f0; }
-
-/* Cards */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    width: 280px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* Skills */
-.skill-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 260px;
-    text-align: left;
-}
-
-.skill-box h3 {
-    color: var(--primary);
-    margin-bottom: 10px;
-}
-
-/* Buttons */
-.btn-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn-link:hover {
-    background: var(--dark);
-}
-
-/* Footer */
-footer {
-    background: var(--dark);
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Khaire - Frontend Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-<header>
-<nav>
-    <h1 class="logo">Portfolio</h1>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-</header>
-
-<!-- HOME -->
-<section class="home">
-    <div>
-        <h1>Anushka Khaire</h1>
-        <h3>FY B.Tech Student</h3>
-        <p>
-            I am first year B.Tech student at MIT AOE with a strong interest in programming 
-            and problem solving. I am passionate about building practical projects and learning 
-            new technologies.
-        </p>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-        Motivated engineering student focused on developing technical skills and working 
-        on innovative projects. Eager to explore new technologies and solve real-world problems.
-    </p>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="education">
-    <h2>Education</h2>
-    <div class="container">
-        <div class="card">
-            <h3>B.Tech (First Year)</h3>
-            <p>MIT Academy of Engineering (MIT AOE)</p>
-        </div>
-        <div class="card">
-            <h3>Academic Background</h3>
-            <p>Completed Higher Secondary and Secondary Education with strong academic foundation.</p>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="container">
-
-        <div class="skill-box">
-            <h3>Programming</h3>
-            <ul>
-                <li>C Basics</li>
-                <li>Problem Solving</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-        <div class="skill-box">
-            <h3>Development</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Basic Web Design</li>
-            </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-circle c1"></div>
+        <div class="floating-circle c2"></div>
+        <div class="floating-circle c3"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Hi, I'm</span><br>
+                    <span class="gradient-text main-name">Anushka Khaire</span>
+                </h1>
+                <p class="hero-subtitle">Frontend Developer & UI/UX Designer crafting premium digital experiences with modern technologies</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Download Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-social">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-box">
-            <h3>Core Skills</h3>
-            <ul>
-                <li>Logical Thinking</li>
-                <li>Teamwork</li>
-                <li>Communication</li>
-            </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="profile-image"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">Passionate frontend developer and UI/UX designer with 2+ years of experience creating premium digital experiences. I specialize in modern web technologies and love transforming ideas into beautiful, functional interfaces.</p>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>B.Tech Computer Science</h3>
+                            <p>Vishwakarma Institute of Technology</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>2+ Years</h3>
+                            <p>Experience</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="certificates">
-    <h2>Certificates & Work</h2>
-    <div class="container">
-
-        <div class="card">
-            <h3>NASSCOM Digital Course</h3>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>UI/UX</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Web Development Basics</h3>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #38bdf8, #60a5fa)"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern responsive e-commerce website built with React, Tailwind CSS and Node.js backend.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #7dd3fc, #a5f3fc)"></div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Full-stack task management application with drag & drop functionality and real-time updates.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #60a5fa, #f0abfc)"></div>
+                    <div class="project-content">
+                        <h3>Portfolio Dashboard</h3>
+                        <p>Interactive analytics dashboard with advanced charts, animations and responsive design.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Motivation Goal Tracker</h3>
-            <a href="https://motivation-goal-tracker-final.onrender.com" target="_blank" class="btn-link">View Project</a>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Google Developer Scholarship</h3>
+                    <p>Completed advanced web development certification program</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>UI/UX Design Award</h3>
+                    <p>Won first place in national UI/UX design competition</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>1st place in 48-hour web development hackathon</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="container">
-        <div class="card">Portfolio Website</div>
-        <div class="card">Fire Alarm System</div>
-        <div class="card">Mini EV Model</div>
-        <div class="card">Smart Study Table</div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-
-    <div class="container">
-
-        <div class="card">
-            <h3>Email</h3>
-            <a href="mailto:aniushkakhaire276@gmail.com">aniushkakhaire276@gmail.com</a>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces with modern design principles</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, high-performance websites and web applications</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Expertise in React, Vue.js and modern JavaScript frameworks</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Projects</h3>
+                    <p>Integrating AI/ML features into web applications</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Phone</h3>
-            <a href="tel:+917020468963">+91 7020468963</a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>anushka.khaire@email.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Pune, Maharashtra, India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Location</h3>
-            <p>Ahilyanagar, Maharashtra, India</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Anushka Khaire</div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p>&copy; 2024 Anushka Khaire. Made with ❤️ using HTML & CSS</p>
         </div>
-
-        <div class="card">
-            <h3>GitHub</h3>
-            <a href="#" class="btn-link">Add Your GitHub</a>
-        </div>
-
-        <div class="card">
-            <h3>Resume</h3>
-            <a href="cse.pdf" download class="btn-link">Download Resume</a>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    <p>©️ 2026 Anushka Khaire</p>
-</footer>
-
+    </footer>
 </body>
 </html>
