@@ -1,352 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anushka Khaire - Frontend Developer & UI/UX Designer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anushka Khaire | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+
+    <!-- NAVBAR -->
+
+    <nav>
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">AK</span>
+
+            <div class="logo">
+                Anushka <span>Khaire</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
             </div>
+
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="floating-circle c1"></div>
-        <div class="floating-circle c2"></div>
-        <div class="floating-circle c3"></div>
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Hi, I'm</span><br>
-                    <span class="gradient-text main-name">Anushka Khaire</span>
-                </h1>
-                <p class="hero-subtitle">Frontend Developer & UI/UX Designer crafting premium digital experiences with modern technologies</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Download Resume</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-social">
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+
+            <h1>
+                Hi, I'm <span>Anushka Khaire</span>
+            </h1>
+
+            <p>
+                First Year Software Engineering Student
+            </p>
+
+            <a href="#about" class="hero-btn">
+                Explore My Portfolio
+            </a>
+
         </div>
+
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="image-container">
-                        <div class="profile-image"></div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <p class="about-text">Passionate frontend developer and UI/UX designer with 2+ years of experience creating premium digital experiences. I specialize in modern web technologies and love transforming ideas into beautiful, functional interfaces.</p>
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h3>B.Tech Computer Science</h3>
-                            <p>Vishwakarma Institute of Technology</p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-clock"></i>
-                            <h3>2+ Years</h3>
-                            <p>Experience</p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-project-diagram"></i>
-                            <h3>25+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+
+            <p>
+                I am a first-year SOFTWARE engineering student who is passionate about technology,
+                AI, and programming. I am currently learning Python, HTML, and CSS.
+                I enjoy building small projects and improving my coding skills.
+            </p>
+
+            <br>
+
+            <p>
+                College Name: PCCOE
+            </p>
+
         </div>
+
     </section>
 
-    <!-- Skills Section -->
-   <!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="container">
+    <!-- SKILLS -->
+
+    <section id="skills">
+
         <h2 class="section-title">Skills</h2>
 
-        <div class="skills-box">
+        <div class="skills-grid">
 
             <div class="skill-card">
-                <i class="fab fa-html5"></i>
                 <h3>HTML</h3>
-                <p>Beginner</p>
             </div>
 
             <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
                 <h3>CSS</h3>
-                <p>Beginner</p>
             </div>
 
             <div class="skill-card">
-                <i class="fab fa-python"></i>
                 <h3>Python</h3>
-                <p>Beginner</p>
             </div>
 
             <div class="skill-card">
-                <i class="fab fa-linux"></i>
-                <h3>Linux</h3>
-                <p>Beginner</p>
+                <h3>Linux Fundamentals</h3>
             </div>
 
             <div class="skill-card">
-                <i class="fas fa-code"></i>
                 <h3>C Programming</h3>
-                <p>Beginner</p>
             </div>
 
             <div class="skill-card">
-                <i class="fas fa-chart-bar"></i>
-                <h3>Tableau</h3>
-                <p>Beginner</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-lightbulb"></i>
                 <h3>Problem Solving</h3>
-                <p>Beginner</p>
             </div>
 
         </div>
-    </div>
-</section>
 
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
 
         <div class="projects-grid">
 
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(45deg, #38bdf8, #60a5fa);"></div>
+                <h3>Smart Study Table</h3>
 
-                <div class="project-content">
-                    <h3>Smart Study Table</h3>
-
-                    <p>
-                        Smart study table with advanced features for productivity,
-                        automation, and smart workspace management.
-                    </p>
-
-                    <span class="project-status completed">
-                        Completed
-                    </span>
-                </div>
+                <p>
+                    A smart desk setup designed to improve focus,
+                    productivity, and organization for students.
+                </p>
             </div>
 
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(45deg, #7dd3fc, #f0abfc);"></div>
+                <h3>Mini EV Model</h3>
 
-                <div class="project-content">
-                    <h3>Mini EV Model</h3>
-
-                    <p>
-                        Working electric vehicle prototype model focused on clean
-                        energy and smart transportation concepts.
-                    </p>
-
-                    <span class="project-status working">
-                        Working
-                    </span>
-                </div>
+                <p>
+                    A mini electric vehicle prototype project based on
+                    sustainable transportation concepts.
+                </p>
             </div>
 
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(45deg, #60a5fa, #38bdf8);"></div>
+                <h3>Fire Alarm System</h3>
 
-                <div class="project-content">
-                    <h3>Fire Alarm System</h3>
-
-                    <p>
-                        Safety-based fire detection and alert system using sensors
-                        and electronic components.
-                    </p>
-
-                    <span class="project-status completed">
-                        Completed
-                    </span>
-                </div>
+                <p>
+                    An electronics-based fire detection system that
+                    alerts users during smoke or fire detection.
+                </p>
             </div>
 
             <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(45deg, #38bdf8, #a5f3fc);"></div>
+                <h3>Motivational Goal Tracker</h3>
 
-                <div class="project-content">
-                    <h3>Motivational Goal Tracker</h3>
-
-                    <p>
-                        Productivity and motivation tracking platform designed to
-                        help users manage daily goals efficiently.
-                    </p>
-
-                    <span class="project-status completed">
-                        Completed
-                    </span>
-                </div>
+                <p>
+                    A goal tracking project designed to motivate users
+                    and improve daily productivity.
+                </p>
             </div>
 
         </div>
-    </div>
-</section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Google Developer Scholarship</h3>
-                    <p>Completed advanced web development certification program</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>UI/UX Design Award</h3>
-                    <p>Won first place in national UI/UX design competition</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Hackathon Winner</h3>
-                    <p>1st place in 48-hour web development hackathon</p>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive and beautiful user interfaces with modern design principles</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Building responsive, high-performance websites and web applications</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>Frontend Development</h3>
-                    <p>Expertise in React, Vue.js and modern JavaScript frameworks</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Projects</h3>
-                    <p>Integrating AI/ML features into web applications</p>
-                </div>
+    <!-- CERTIFICATES -->
+
+    <section id="certificates">
+
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+                <h3>Python Certificate</h3>
             </div>
+
+            <div class="certificate-card">
+                <h3>HTML & CSS Certificate</h3>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Linux Fundamentals</h3>
+            </div>
+
+            <div class="certificate-card">
+                <h3>Datathone Certificate</h3>
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
+
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>anushka.khaire@email.com</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>+91 98765 43210</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Pune, Maharashtra, India</p>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Feel free to connect with me for collaboration and opportunities.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:anushkakhaire@gmail.com">
+                anushkakhaire@gmail.com
+            </a>
+        </p>
+
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Anushka Khaire</div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </div>
-            <div class="footer-divider"></div>
-            <p>&copy; 2024 Anushka Khaire. Made with ❤️ using HTML & CSS</p>
-        </div>
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Anushka Khaire | Portfolio Website
     </footer>
+
 </body>
+
 </html>
