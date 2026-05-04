@@ -1,40 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anushka Khaire | Software Engineering Student</title>
+    <title>Anushka Khaire | MIT AOE - Software Engineering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background Particles -->
-    <div class="particles">
-        <div class="particle p1"></div>
-        <div class="particle p2"></div>
-        <div class="particle p3"></div>
-        <div class="particle p4"></div>
-        <div class="particle p5"></div>
-        <div class="particle p6"></div>
+    <!-- Floating Background Elements -->
+    <div class="bg-elements">
+        <div class="float-circle c1"></div>
+        <div class="float-circle c2"></div>
+        <div class="float-circle c3"></div>
+        <div class="float-circle c4"></div>
+        <div class="float-line l1"></div>
+        <div class="float-line l2"></div>
     </div>
 
-    <!-- Navbar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-code"></i>
-                <span>Anushka Khaire</span>
+            <div class="nav-logo">
+                <div class="logo-ring"></div>
+                <i class="fas fa-laptop-code"></i>
+                <span>AK</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills"><i class="fas fa-graduation-cap"></i> Skills</a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i><span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i><span>Projects</span></a></li>
+                <li><a href="#certificates" class="nav-link"><i class="fas fa-award"></i><span>Certificates</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-message"></i><span>Contact</span></a></li>
             </ul>
-            <div class="menu-toggle">
+            <div class="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,76 +46,81 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="typing-text">
-                    <span class="gradient-text">Hi, I'm </span>
-                    <span class="typing">Anushka Khaire</span>
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>FIRST YEAR</span>
+                    <span>SOFTWARE ENGINEER</span>
                 </div>
-                <h2 class="hero-subtitle">First Year Software Engineering Student</h2>
-                <p class="hero-desc">Passionate about technology, AI, and programming. Currently mastering Python, HTML, CSS and building innovative projects at <span class="highlight">MIT Academy of Engineering, Alandi</span></p>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Anushka Khaire</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Passionate Software Engineering student at <strong>MIT Academy of Engineering, Alandi</strong><br>
+                    Building innovative solutions with Python, Web Development & AI
+                </p>
                 <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fas fa-arrow-down"></i> Explore My Work
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Projects
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        Contact Me
                     </a>
                 </div>
             </div>
             <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">1<sup>+</sup></div>
-                    <div class="stat-label">Year Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10<sup>+</sup></div>
+                <div class="stat-box">
+                    <div class="stat-number">15<sup>+</sup></div>
                     <div class="stat-label">Projects</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-box">
                     <div class="stat-number">5<sup>+</sup></div>
                     <div class="stat-label">Certificates</div>
                 </div>
+                
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-hint">
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-                <p class="section-subtitle">First-year Software Engineering student passionate about creating innovative solutions</p>
+                <div class="section-line"></div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a dedicated first-year Software Engineering student at <strong>MIT Academy of Engineering, Alandi</strong> who is passionate about technology, AI, and programming.</p>
-                    <p>Currently learning Python, HTML, CSS, C Programming and Linux fundamentals. I enjoy building small projects, solving complex problems, and continuously improving my coding skills.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-brain"></i>
-                            <span>Quick Learner</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-rocket"></i>
-                            <span>Problem Solver</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <span>Team Player</span>
-                        </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Student Developer</h3>
+                        <p>First-year B.Tech Software Engineering student at <strong>MIT Academy of Engineering, Alandi</strong>. Passionate about creating innovative tech solutions.</p>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-card">
-                        <div class="profile-pic"></div>
-                        <div class="status-badge">
-                            <i class="fas fa-circle"></i> Online
-                        </div>
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Skills Focus</h3>
+                        <p>Mastering Python, HTML/CSS, C Programming, Linux, and problem-solving. Building real-world projects daily.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Project Builder</h3>
+                        <p>15+ projects including Smart Study Table, EV Model, Fire Alarm System, and Goal Tracker applications.</p>
                     </div>
                 </div>
             </div>
@@ -120,124 +128,145 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
-                <p class="section-subtitle">Technologies and skills I'm currently mastering</p>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
             </div>
             <div class="skills-grid">
-                <div class="skill-card" data-skill="HTML">
+                <div class="skill-box">
                     <div class="skill-icon">
                         <i class="fab fa-html5"></i>
                     </div>
                     <h3>HTML5</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 90%"></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 92%"></div>
                     </div>
+                    <span class="skill-percent">92%</span>
                 </div>
-                <div class="skill-card" data-skill="CSS">
+                <div class="skill-box">
                     <div class="skill-icon">
                         <i class="fab fa-css3-alt"></i>
                     </div>
                     <h3>CSS3</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 85%"></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 88%"></div>
                     </div>
+                    <span class="skill-percent">88%</span>
                 </div>
-                <div class="skill-card" data-skill="Python">
+                <div class="skill-box">
                     <div class="skill-icon">
                         <i class="fab fa-python"></i>
                     </div>
                     <h3>Python</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 80%"></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
                     </div>
+                    <span class="skill-percent">85%</span>
                 </div>
-                <div class="skill-card" data-skill="Linux">
+                <div class="skill-box">
                     <div class="skill-icon">
-                        <i class="fab fa-linux"></i>
+                        <i class="fas fa-terminal"></i>
                     </div>
-                    <h3>Linux Fundamentals</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 75%"></div>
+                    <h3>Linux</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 78%"></div>
                     </div>
+                    <span class="skill-percent">78%</span>
                 </div>
-                <div class="skill-card" data-skill="C">
+                <div class="skill-box">
                     <div class="skill-icon">
                         <i class="fas fa-c"></i>
                     </div>
                     <h3>C Programming</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 70%"></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 82%"></div>
                     </div>
+                    <span class="skill-percent">82%</span>
                 </div>
-                <div class="skill-card" data-skill="Problem Solving">
+                <div class="skill-box">
                     <div class="skill-icon">
                         <i class="fas fa-puzzle-piece"></i>
                     </div>
                     <h3>Problem Solving</h3>
-                    <div class="skill-progress">
-                        <div class="progress-fill" style="width: 85%"></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
                     </div>
+                    <span class="skill-percent">90%</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-                <p class="section-subtitle">Real-world projects showcasing my skills and creativity</p>
+                <div class="section-line"></div>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image smart-table"></div>
-                    <div class="project-content">
+                <div class="project-box">
+                    <div class="project-image study-table">
+                        <div class="project-overlay">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
                         <h3>Smart Study Table</h3>
-                        <p>A smart desk setup designed to improve focus, productivity, and organization for students with automated features.</p>
-                        <div class="project-tech">
+                        <p>Intelligent desk with automated lighting, posture detection, and productivity tracking for students.</p>
+                        <div class="project-tags">
                             <span>Python</span>
-                            <span>Hardware</span>
                             <span>IoT</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image ev-model"></div>
-                    <div class="project-content">
-                        <h3>Mini EV Model</h3>
-                        <p>A mini electric vehicle prototype project based on sustainable transportation concepts and renewable energy.</p>
-                        <div class="project-tech">
-                            <span>Electronics</span>
                             <span>Hardware</span>
-                            <span>Engineering</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image fire-alarm"></div>
-                    <div class="project-content">
+                <div class="project-box">
+                    <div class="project-image ev-model">
+                        <div class="project-overlay">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini EV Model</h3>
+                        <p>Electric vehicle prototype with solar charging, regenerative braking, and smart battery management.</p>
+                        <div class="project-tags">
+                            <span>Electronics</span>
+                            <span>Renewable Energy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-image fire-alarm">
+                        <div class="project-overlay">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
                         <h3>Fire Alarm System</h3>
-                        <p>An electronics-based fire detection system that alerts users during smoke or fire detection with real-time monitoring.</p>
-                        <div class="project-tech">
+                        <p>Smart fire detection system with smoke sensors, temperature monitoring, and instant SMS alerts.</p>
+                        <div class="project-tags">
                             <span>C Programming</span>
                             <span>Sensors</span>
-                            <span>Electronics</span>
+                            <span>GSM</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image goal-tracker"></div>
-                    <div class="project-content">
-                        <h3>Motivational Goal Tracker</h3>
-                        <p>A goal tracking web application designed to motivate users and improve daily productivity with progress analytics.</p>
-                        <div class="project-tech">
+                <div class="project-box">
+                    <div class="project-image goal-tracker">
+                        <div class="project-overlay">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Goal Tracker</h3>
+                        <p>Web-based motivational goal tracking app with progress analytics and daily reminders.</p>
+                        <div class="project-tags">
                             <span>HTML/CSS</span>
-                            <span>JavaScript</span>
                             <span>Python</span>
+                            <span>Web Dev</span>
                         </div>
                     </div>
                 </div>
@@ -246,93 +275,75 @@
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
+    <section id="certificates" class="certificates-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Certificates & <span class="gradient-text">Achievements</span></h2>
-                <p class="section-subtitle">Recognitions for my technical skills and learning journey</p>
+                <h2 class="section-title">Certificates & <span class="gradient-text">Awards</span></h2>
+                <div class="section-line"></div>
             </div>
             <div class="certificates-grid">
-                <div class="certificate-card">
+                <div class="cert-box">
                     <div class="cert-icon">
                         <i class="fab fa-python"></i>
                     </div>
-                    <h3>Python Certificate</h3>
-                    <p>Certified Python programmer with hands-on project experience</p>
+                    <h3>Python Programming</h3>
+                    <p>Certified Python developer with advanced programming concepts</p>
+                    <div class="cert-date">2024</div>
                 </div>
-                <div class="certificate-card">
+                <div class="cert-box">
                     <div class="cert-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3>HTML & CSS Certificate</h3>
-                    <p>Mastery in modern web development fundamentals</p>
+                    <h3>HTML & CSS</h3>
+                    <p>Modern web development with responsive design principles</p>
+                    <div class="cert-date">2024</div>
                 </div>
-                <div class="certificate-card">
+                <div class="cert-box">
                     <div class="cert-icon">
                         <i class="fab fa-linux"></i>
                     </div>
                     <h3>Linux Fundamentals</h3>
-                    <p>Certified Linux system administration basics</p>
+                    <p>Certified Linux command line and system administration</p>
+                    <div class="cert-date">2024</div>
                 </div>
-                <div class="certificate-card">
+                <div class="cert-box">
                     <div class="cert-icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3>Datathone Certificate</h3>
-                    <p>Data science and analytics certification</p>
+                    <h3>Datathone</h3>
+                    <p>Data science and analytics certification program</p>
+                    <div class="cert-date">2024</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <p class="section-subtitle">Feel free to connect with me for collaboration and opportunities</p>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="section-line"></div>
             </div>
-            <div class="contact-content">
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="info-box">
                         <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:anushkakhaire@gmail.com">anushkakhaire@gmail.com</a>
-                        </div>
+                        <h4>Email</h4>
+                        <p>anushkakhaire@gmail.com</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>MIT Academy of Engineering, Alandi, Pune</p>
-                        </div>
+                    <div class="info-box">
+                        <i class="fas fa-map-pin"></i>
+                        <h4>Location</h4>
+                        <p>MIT Academy of Engineering<br>Alandi, Pune, Maharashtra</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="info-box">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 98765 43210</p>
-                        </div>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-group full">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <i class="fas fa-comment"></i>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
+                
             </div>
         </div>
     </section>
@@ -341,14 +352,20 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-code"></i>
-                    <span>© 2026 Anushka Khaire</span>
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-laptop-code"></i>
+                        Anushka Khaire
+                    </div>
+                    <p>© 2026 MIT AOE | Built with ❤️</p>
                 </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
