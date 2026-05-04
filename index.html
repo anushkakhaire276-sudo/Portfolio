@@ -1,80 +1,313 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anushka Khaire Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-body{
-font-family:Arial;
-margin:0;
-padding:0;
-background:#111;
-color:white;
-text-align:center;
+:root {
+    --primary: #2563eb;
+    --primary-light: #dbeafe;
+    --primary-verylight: #eff6ff;
+    --dark: #1e293b;
+    --text: #334155;
 }
-header{
-background:#222;
-padding:30px;
+
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-section{
-padding:20px;
-margin:20px;
-background:#1c1c1c;
-border-radius:10px;
+
+/* Navbar */
+header {
+    background: var(--dark);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
 }
-a{
-color:#00bfff;
-text-decoration:none;
+
+nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
-button{
-padding:10px 20px;
-background:#00bfff;
-border:none;
-border-radius:5px;
-cursor:pointer;
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+/* HOME (Light Professional) */
+.home {
+    height: 90vh;
+    background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #1e293b;
+}
+
+.home div {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.home h1 { font-size: 42px; }
+.home h3 { margin-top: 10px; }
+.home p { margin-top: 15px; max-width: 600px; }
+
+/* Sections */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+h2 { margin-bottom: 25px; }
+
+/* Section colors */
+.about { background: #f1f5f9; }
+.education { background: #e0f2fe; }
+.skills { background: #fef9c3; }
+.certificates { background: #ede9fe; }
+.projects { background: #f1f5f9; }
+.contact { background: #e2e8f0; }
+
+/* Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Skills */
+.skill-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: left;
+}
+
+.skill-box h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-link:hover {
+    background: var(--dark);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Your Name</h1>
-<p>Diploma Student | Electronics Enthusiast | Future Engineer</p>
+<nav>
+    <h1 class="logo">Portfolio</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 </header>
 
-<section>
-<h2>About Me</h2>
-<p>I am a passionate student interested in electronics, EV projects and innovation.</p>
+<!-- HOME -->
+<section class="home">
+    <div>
+        <h1>Anushka Khaire</h1>
+        <h3>FY B.Tech Student</h3>
+        <p>
+            I am first year B.Tech student at MIT AOE with a strong interest in programming 
+            and problem solving. I am passionate about building practical projects and learning 
+            new technologies.
+        </p>
+    </div>
 </section>
 
-<section>
-<h2>Skills</h2>
-<p>HTML, CSS, Digital Electronics, PowerPoint, Communication</p>
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Motivated engineering student focused on developing technical skills and working 
+        on innovative projects. Eager to explore new technologies and solve real-world problems.
+    </p>
 </section>
 
-<section>
-<h2>Projects</h2>
-<p>Fire Alarm System</p>
-<p>Mini EV Model</p>
+<!-- EDUCATION -->
+<section id="education" class="education">
+    <h2>Education</h2>
+    <div class="container">
+        <div class="card">
+            <h3>B.Tech (First Year)</h3>
+            <p>MIT Academy of Engineering (MIT AOE)</p>
+        </div>
+        <div class="card">
+            <h3>Academic Background</h3>
+            <p>Completed Higher Secondary and Secondary Education with strong academic foundation.</p>
+        </div>
+    </div>
 </section>
 
-<section>
-<h2>Certificates</h2>
-<p>NASSCOM Certification</p>
-<p>Workshop Certificates</p>
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="container">
+
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <ul>
+                <li>C Basics</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Basic Web Design</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Core Skills</h3>
+            <ul>
+                <li>Logical Thinking</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+
+    </div>
 </section>
 
-<section>
-<h2>Resume</h2>
-<a href="resume.pdf" target="_blank">
-<button>View Resume</button>
-</a>
+<!-- CERTIFICATES -->
+<section id="certificates" class="certificates">
+    <h2>Certificates & Work</h2>
+    <div class="container">
+
+        <div class="card">
+            <h3>NASSCOM Digital Course</h3>
+        </div>
+
+        <div class="card">
+            <h3>Web Development Basics</h3>
+        </div>
+
+        <div class="card">
+            <h3>Motivation Goal Tracker</h3>
+            <a href="https://motivation-goal-tracker-final.onrender.com" target="_blank" class="btn-link">View Project</a>
+        </div>
+
+    </div>
 </section>
 
-<section>
-<h2>Connect</h2>
-<p><a href="https://linkedin.com">LinkedIn</a></p>
-<p><a href="https://github.com">GitHub</a></p>
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="container">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Fire Alarm System</div>
+        <div class="card">Mini EV Model</div>
+        <div class="card">Smart Study Table</div>
+    </div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Email</h3>
+            <a href="mailto:aniushkakhaire276@gmail.com">aniushkakhaire276@gmail.com</a>
+        </div>
+
+        <div class="card">
+            <h3>Phone</h3>
+            <a href="tel:+917020468963">+91 7020468963</a>
+        </div>
+
+        <div class="card">
+            <h3>Location</h3>
+            <p>Ahilyanagar, Maharashtra, India</p>
+        </div>
+
+        <div class="card">
+            <h3>GitHub</h3>
+            <a href="#" class="btn-link">Add Your GitHub</a>
+        </div>
+
+        <div class="card">
+            <h3>Resume</h3>
+            <a href="cse.pdf" download class="btn-link">Download Resume</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>©️ 2026 Anushka Khaire</p>
+</footer>
 
 </body>
 </html>
