@@ -692,11 +692,57 @@ section {
     position: relative;
 }
 
-.cert-box:hover {
-    transform: translateY(-15px) rotate(1deg);
-    border-color: rgba(255, 79, 216, 0.4);
-    box-shadow: 0 20px 40px rgba(255, 79, 216, 0.2);
+/* Arya replace */
+/* certifications {
+    padding: 8rem 0;
 }
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.certification-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 255, 136, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+    border-color: #00ff88;
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.certification-card h3 {
+    color: #00ff88;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    color: #888888;
+    font-size: 0.9rem;
+    font-style: italic;
+} */
+/* djfsjrgrnbl */
 
 .cert-icon {
     width: 80px;
