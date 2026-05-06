@@ -949,3 +949,126 @@ section {
   border-radius: 5px;
   text-decoration: none;
 }
+/* ===== PROJECTS SECTION ===== */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect */
+.project-card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,173,181,0.15), transparent);
+  top: -50%;
+  left: -50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 173, 181, 0.2);
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.project-card p {
+  color: #b0b0c3;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ===== CERTIFICATIONS SECTION ===== */
+
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.certificate-card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow hover */
+.certificate-card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,173,181,0.15), transparent);
+  top: -50%;
+  left: -50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.certificate-card:hover::before {
+  opacity: 1;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 173, 181, 0.2);
+}
+
+.certificate-card h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.certificate-card p {
+  color: #9aa0b5;
+  font-size: 14px;
+}
+
+/* Button (NO GREEN - blue theme) */
+.certificate-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #00adb5;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.certificate-btn:hover {
+  background: #007bff;
+  transform: scale(1.05);
+}
