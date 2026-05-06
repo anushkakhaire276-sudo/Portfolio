@@ -676,6 +676,7 @@ body {
 }
 
 /* Contact Section */
+/* Contact Section - CORRECTED */
 .contact-section {
     padding: 120px 0 80px;
 }
@@ -702,6 +703,9 @@ body {
     border-radius: 24px;
     transition: all 0.3s ease;
     box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    /* FIXED: Added word-break and overflow properties */
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .info-box:hover {
@@ -727,6 +731,8 @@ body {
     font-size: 1.3rem;
     margin-bottom: 15px;
     font-weight: 700;
+    /* FIXED: Full width for better layout */
+    width: 100%;
 }
 
 .info-box a,
@@ -734,10 +740,50 @@ body {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 1.1rem;
+    /* FIXED: Added proper text handling */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.5;
+    display: block;
+    /* FIXED: Prevent text overflow */
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .info-box a:hover {
     color: var(--text-primary);
+}
+
+/* FIXED: Extra responsive fix for mobile */
+@media (max-width: 768px) {
+    .info-box {
+        padding: 30px 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .info-box i {
+        margin: 0 auto 15px;
+    }
+    
+    .info-box a,
+    .info-box p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        padding: 25px 20px;
+    }
+    
+    .info-box a,
+    .info-box p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Footer */
