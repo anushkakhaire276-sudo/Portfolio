@@ -79,7 +79,6 @@
                     <div class="stat-number">10<sup>+</sup></div>
                     <div class="stat-label">Certificates</div>
                 </div>
-                
             </div>
         </div>
         <div class="scroll-hint">
@@ -219,7 +218,6 @@
                 <h3>MOTIVATIONAL GOAL TRACKER</h3>
                 <p>A simple system to track goals and improve productivity.</p>
                   <a href="https://motivation-goal-tracker-final.onrender.com" target="_blank" class="project-btn">View Project</a>
-    
             </div>
 
             <div class="project-card">
@@ -231,7 +229,8 @@
     </div>
         <!--  certificates-->
 </section>
-   <section id="certifications" class="certifications">
+
+   <section id="certificates" class="certifications">
   <div class="container">
     <h2 class="section-title">Certificates</h2>
 
@@ -284,6 +283,7 @@
     </div>
   </div>
 </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -309,7 +309,6 @@
                         <a href="tel:+917020468963">+91 7020468963</a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -327,14 +326,36 @@
                 </div>
                 <div class="footer-right">
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://llinkedin.com/in/anushka-khaire-400164408" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/anushka_khaire_12" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:anushkakhaire276@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Replace these URLs with your actual social media profile links
+        const socialLinks = document.querySelectorAll('.social-links a');
+        socialLinks.forEach(link => {
+            // Add hover effect if needed
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 </body>
 </html>
